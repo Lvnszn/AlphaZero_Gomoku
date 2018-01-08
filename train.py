@@ -17,9 +17,9 @@ from mcts_alphaZero import MCTSPlayer
 class TrainPipeline():
     def __init__(self):
         # params of the board and the game
-        self.board_width = 6
-        self.board_height = 6
-        self.n_in_row = 4
+        self.board_width = 15
+        self.board_height = 15
+        self.n_in_row = 5
         self.board = Board(width=self.board_width, height=self.board_height, n_in_row=self.n_in_row)
         self.game = Game(self.board)
         # training params 
@@ -139,5 +139,4 @@ class TrainPipeline():
 
 if __name__ == '__main__':
     training_pipeline = TrainPipeline()
-    training_pipeline.run()    
-    
+    training_pipeline.run()
