@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    return '<h1>Home</h1>'
+    return render_template("qipan.html")
 
 @app.route('/signin', methods=['GET'])
 def signin_form():
